@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header css는 link로 연결 */
+
+/* main */
+main {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+main .m-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    z-index: 3;
+}
+
+main .m-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    z-index: 2;
+}
+
+main .m-img3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    z-index: 1;
+}
+
+main .m-img1 img,
+main .m-img2 img,
+main .m-img3 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* section */
+section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+section .q-series {
+    position: relative;
+    margin: 50px 0;
+    height: 700px;
+    /* outline: 2px solid red; */
+}
+
+section .q-series .title {
+    padding-top: 200px;
+}
+
+section .q-series .title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+section .q-series .title p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #555;
+    margin: 0 0 50px 5px;
+}
+
+section .q-series .btn p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section .q-series .btn a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+
+    display: inline-block;
+    padding: 16px 30px;
+    background-color: #E7F081;
+    border: 2px solid #5C9348;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section .q-series .btn a:hover {
+    background-color: #5C9348;
+    color: #fff;
+}
+
+section .q-series img {
+    position: absolute;
+    top: 8%;
+    right: 0;
+}
+
+section .custom {
+    /* outline: 2px solid blue; */
+    margin: 120px 0;
+}
+
+section .custom .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section .custom .title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #333;
+
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+section .custom .title p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.5;
+    margin: 40px;
+}
+
+section .custom .wrapper {
+    width: 1280px;
+    /* height: auto; */
+    background-color: #fff;
+    overflow-x: hidden;
+
+    /* outline: 3px solid red; */
+}
+
+section .custom .wrapper .img-stack {
+    width: 300%; /* 한세트당 3.5 * 3 = 10.5 / 컨텐츠 10.5개가 들어간다는 의미!!! */
+    position: relative;
+}
+
+section .custom .wrapper .img-stack li {
+    width: 9.52%; /* 여백까지 포함해서 1개의 크기!!!! */
+    float: left;
+    /* padding: 0 20px; */
+    padding: 0 0.5%;
+    box-sizing: border-box;
+}
+/* section .custom .wrapper .img-stack li:nth-child(2n+1) {
+    outline: 3px solid blue;
+    margin-top: 40px;
+    padding: 40px 0;
+} */
+section .custom .wrapper .img-stack li.up {
+    margin-top: 40px;
+}
+
+
+section .custom .wrapper .img-stack li img {
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* section .custom .wrapper .img-stack img:nth-child(2n) {} */
+
+section .custom .wrapper:hover .img-stack img {
+    opacity: 0.5;
+}
+
+section .custom .wrapper .img-stack img:hover {
+    opacity: 1 !important;
+}
+
+
+section .insta {
+    /* outline: 2px solid red; */
+    margin: 120px 0;
+}
+
+section .insta .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section .insta .title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #333;
+
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+section .insta .title a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #888;
+}
+
+section .insta .title a:hover {
+    color: #333;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+section .insta .wrapper {
+    width: 1280px;
+    /* height: auto; */
+    background-color: #fff;
+    overflow-x: hidden;
+
+    /* outline: 2px solid purple; */
+}
+
+section .insta .wrapper .img-stack {
+    width: 300%;
+    position: relative;
+}
+
+/* section .insta .wrapper .img-stack li {
+    outline: 2px solid red;
+} */
+section .insta .wrapper .img-stack li {
+    width: 9.52%;
+    float: left;
+    border-radius: 40px 0 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s ease;
+    /* vertical-align: top; */
+    transition: filter  0.3s ease;
+    padding: 0 0.5%;
+    overflow: hidden;
+}
+
+section .insta .wrapper .img-stack li img {
+    display: block;
+    width: 100%;
+    border-radius: 40px 0 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+section .insta .wrapper .img-stack:hover li img {
+    filter: blur(3px);
+}
+
+section .insta .wrapper .img-stack li img:hover {
+    filter: blur(0);
+    transform: scale(1.05);
+    z-index: 888;
+}

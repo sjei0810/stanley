@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* main */
+main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/* main .main-img {} */
+
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section article {
+    width: 100%;
+    max-width: 1280px;
+    margin: 100px auto;
+}
+
+section article .content {
+    display: block;
+    float: left;
+    margin: 33px;
+}
+
+section article .content img {
+    width: 360px;
+    border-radius: 40px;
+}
+section article .content img:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name1 {
+    background-color: #FFD1E3;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name1:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name1 p {
+    color: #777;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name2 {
+    background-color: #E2282F;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px -2px #fff;
+}
+section article .content .c-name2:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name2 p {
+    color: #F0DBB8;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name3 {
+    background-color: #D64489;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name3:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name3 p {
+    color: #8299FF;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name4 {
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name4:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name4 p {
+    color: #7BA2B5;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name5 {
+    background-color: #C25A90;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name5:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name5 p {
+    color: #d9d9d9;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name6 {
+    background-color: #BC443E;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name6:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name6 p {
+    color: #FFD1E3;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name7 {
+    background-color: #D38834;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name7:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name7 p {
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name8 {
+    background-color: #8F383A;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name8:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name8 p {
+    color: #C88A56;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+section article .content .c-name9 {
+    background-color: #5D9A8B;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+section article .content .c-name9:hover {
+    box-shadow: 0px 0px 5px #444;
+}
+
+section article .content .c-name9 p {
+    color: #D1C4A6;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}

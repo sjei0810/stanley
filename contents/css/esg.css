@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* main */
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+main .title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+section {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../image/esg/esg-bg.jpg);
+    background-size: cover;
+}
+
+section .esg1 {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+section .esg1 .esg1-title {
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+section .esg1 .esg1-title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #555;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline;
+    background-color: #E7F081;
+    border-radius: 15px;
+}
+
+section:hover .esg1 .esg1-title h3 {
+    background: linear-gradient(#888, #E7F081);
+    color: #555;
+    box-shadow: 0px 0px 10px -2px #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+section .esg1 .esg1-title p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    letter-spacing: 2px;
+    color: #d9d9d9;
+}
+
+section:hover .esg1 .esg1-title p {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+
+section .esg1 .solution {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+section .esg1 .solution .content {
+    /*  outline: 2px solid blue; */
+    display: inline-block;
+    background-color: #fff;
+    margin: 18px;
+    border-radius: 10px;
+}
+
+section .esg1 .solution .content img {
+    padding: 14.5px;
+    border-radius: 40px;
+}
+
+section .esg1 .solution .content .des {
+    text-align: center;
+    margin: 12px;
+}
+
+section .esg1 .solution .content .des h4 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0 0 5px;
+    transition: 0.3s ease;
+}
+
+section .esg1 .solution .content .des:hover h4 {
+    background-color: #E7F081;
+}
+
+section .esg1 .solution .content .des p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+section .esg2 {
+    width: 100%;
+    max-width: 1280px;
+    margin: 200px auto 0;
+}
+
+section .esg2 .esg2-title {
+    text-align: center;
+    padding: 100px 0 0;
+}
+
+section .esg2 .esg2-title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #555;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline;
+    background-color: #E7F081;
+    border-radius: 15px;
+}
+
+section:hover .esg2 .esg2-title h3 {
+    background-image: linear-gradient(#E7F081, #888);
+    color: #555;
+    box-shadow: 0px 0px 10px -2px #fff;
+}
+
+section .esg2 .esg2-title p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    letter-spacing: 2px;
+    color: #d9d9d9;
+}
+
+section:hover .esg2 .esg2-title p {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+section .esg2 .e-article {
+    width: 100%;
+    max-width: 1280px;
+    padding: 30px 0 100px;
+}
+
+section .esg2 .e-article .content {
+    background-color: #fff;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+section .esg2 .e-article .content:hover {
+    background-color: #E7F081;
+    color: #444;
+}
+
+section .esg2 .e-article .content-plus {
+    background-color: #fff;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 20px;
+    transform: translateY(-4%);
+    transition: 0.3s ease;
+}
+
+section .esg2 .e-article .content-plus:hover {
+    background-color: #E7F081;
+    color: #444;
+}
+
+section .esg2 .e-article .content img {
+    border-radius: 10px 10px 0 0;
+}
+
+section .esg2 .e-article .content-plus img {
+    border-radius: 10px 10px 0 0;
+}
+
+section .esg2 .e-article .content .c-title {
+    text-align: center;
+    padding: 15px;
+}
+
+section .esg2 .e-article .content-plus .c-title-plus {
+    text-align: center;
+    padding: 30px 0;
+}
+
+section .esg2 .e-article .content .c-title h4 {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+section .esg2 .e-article .content-plus .c-title-plus h4 {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #E7F081;
+    padding-top: 20px;
+    border-top: 10px solid #5C9348;
+}
+
+footer .inner-footer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+footer .copyright {
+    margin-bottom: 15px;
+}
+
+footer .copyright a {
+    color: #9795B5;
+    display: block;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+footer .copyright img {
+    margin-left: -15px;
+}
+
+footer .link {
+    display: inline-block;
+    margin: 15px 0 50px;
+}
+
+footer hr {
+    background-color: #9795B5;
+}
+
+footer .link a {
+    margin-right: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    color: #9795B5;
+}
+
+footer .link a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #555;
+}
+
+footer .sns {
+    float: right;
+    text-align: right;
+    margin-top: 15px;
+}
+
+footer .sns a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+footer .sns a img {
+    display: block;
+    width: 80%;
+}

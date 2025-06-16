@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* main */
+main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/* main .main-img {} */
+
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section article {
+    width: 100%;
+    margin: 80px 0;
+}
+
+section article .function1 {
+    width: 100%;
+    max-width: 1280px;
+    margin: 100px auto;
+}
+
+section article .function1 img {
+    width: 800px;
+    border-radius: 20px;
+    border: 5px solid #5C9348;
+}
+
+section article .function1 .des1 {
+    display: inline;
+    text-align: right;
+    float: right;
+    padding: 10px;
+    border: 5px solid #5C9348;
+    border-radius: 20px;
+    background-color: #E7F081;
+}
+
+section article .function1 .des1 h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 8px 5px;
+}
+
+section article .function1 .des1 hr {
+    padding: 0.8px;
+    background-color: #ccc;
+    margin: 8px 5px;
+}
+
+section article .function1 .des1 p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 8px 5px;
+    line-height: 28px;
+}
+
+section article .function2 {
+    width: 100%;
+    max-width: 1280px;
+    margin: 100px auto;
+}
+
+section article .function2 .des2 {
+    display: inline;
+    text-align: left;
+    float: left;
+    padding: 10px;
+    border: 5px solid #5C9348;
+    border-radius: 20px;
+    background-color: #E7F081;
+}
+
+section article .function2 .des2 h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 8px 5px;
+}
+
+section article .function2 .des2 hr {
+    padding: 0.8px;
+    background-color: #ccc;
+    margin: 8px 5px;
+}
+
+section article .function2 .des2 p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 8px 5px;
+    line-height: 28px;
+}
+
+section article .function2 img {
+    width: 800px;
+    float: right;
+    border-radius: 20px;
+    border: 5px solid #5C9348;
+}

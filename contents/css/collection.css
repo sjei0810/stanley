@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* main */
+main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/* main .main-img {} */
+
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section article {
+    width: 100%;
+}
+
+section article .coll-img {
+    column-count: 3;
+    column-gap: 10px;
+    max-width: 1280px;
+    margin: 50px 0;
+}
+
+section article .coll-img a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section article .coll-img a img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}

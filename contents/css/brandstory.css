@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}  /* 도저히 가로 나열된 요소들이 안 숨겨져서 이 방법 사용 */
+
+/* main */
+main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/* main .main-img {} */
+
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+
+section {
+    width: 100%;
+    /* 1280 * 7 */
+    max-width: 1280px;
+    margin: 100px auto;
+}
+
+section .box {
+    width: 1280px;
+    /* float: left; */
+    position: relative;
+    /* outline: 2px solid red; */
+    display: inline-block;
+    margin: 200px 0;
+}
+
+section .box .des {
+    display: inline-block;
+    margin: 0;
+}
+
+section .box .des h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 20px;
+}
+
+section .box .des p {
+    font-family: "42dot Sans", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #888;
+    line-height: 38px;
+    letter-spacing: 0.8px;
+    margin: 20px;
+}
+
+section .box .img-wrapper {
+    float: right;
+    max-width: 600px;
+    margin: 40px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+}
+
+section .box .img-wrapper .img-group {
+    width: 100%;
+    max-width: 650px;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 auto;
+    outline: 2px solid purple;
+}
+
+section .box .img-wrapper .img-group img {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 20px;
+    transform: translateX(-60%);
+}

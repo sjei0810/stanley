@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* 
+font
+
+1) outfit 폰트 (영문)
+font-family: "Outfit", sans-serif;
+font-weight: 100~900;
+
+2) 42dot Sans (한글)
+font-family: "42dot Sans", sans-serif;
+font-weight: 300~800;
+*/
+
+/* reset ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* main */
+main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+/* main .main-img {} */
+
+main .main-img img {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    width: 1280px;
+    position: absolute;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* section */
+section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section .order1 {
+    /* outline: 2px solid blue; */
+    margin: 50px 0;
+}
+
+section .order1 h3 {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin: 60px 0;
+}
+
+section .order1 .des {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+section .order1 .des li {
+    /* outline: 1px solid red; */
+    padding: 50px 0;
+    border-bottom: 1px solid #999;
+}
+
+section .order1 .des li:last-child {
+    border-bottom: none;
+}
+
+section .order2 {
+    margin: 100px 0;
+    /* outline: 1px solid red; */
+}
+
+section .order2 .order-txt {
+    display: inline-block;
+    transform: translateY(80%);
+    position: relative;
+}
+
+section .order2 .order-txt h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+section .order2 .order-txt .ad-des {
+    margin: 30px 10px;
+}
+
+section .order2 .order-txt .ad-des p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #777;
+}
+section .order2 .order-txt .email {
+    margin: 0 2px;
+}
+section .order2 .order-txt .email input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #8D8BA7;
+    border-radius: 10px;
+}
+
+section .order2 .order-txt .email input::placeholder {
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+section .order2 .order-txt .email .e-txt {
+    margin-right: 10px;
+}
+
+section .order2 .order-txt .email a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    border: 2px solid #999;
+    border-radius: 5px;
+    background-color: #E7F081;
+    padding: 4px;
+    color: #5C9348;
+}
+section .order2 .order-txt .email a:hover {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    border: 2px solid #5C9348;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 4px;
+    color: #5C9348;
+}
+
+section .order2 img {
+    float: right;
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px #999;
+}
